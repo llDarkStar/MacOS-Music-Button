@@ -23,7 +23,7 @@ This tool is useful for building custom AI assistants that automate laptop actio
 clang++ -fobjc-arc -framework Foundation -framework AppKit mediactl.mm -o mediactl
 ```
 
-##Usage
+## Usage
 
 ```bash
 ./mediactl play
@@ -31,18 +31,18 @@ clang++ -fobjc-arc -framework Foundation -framework AppKit mediactl.mm -o mediac
 ./mediactl toggle
 ./mediactl info
 ```
-##Commands
+## Commands
 	•	play — start or resume playback
 	•	pause — pause playback
 	•	toggle — switch between play and pause
 	•	info — return playback status as JSON
 
-##Example Output
+## Example Output
 ```json
 {"ok":true,"playing":true,"title":"Track name","artist":"Artist name"}
 ```
 
-##Use Case
+## Use Case
 This utility can be integrated into local automation tools, AI agents, voice assistants, or Node.js applications.
 For example, it can be called from a custom assistant that listens for commands like:
 	•	pause the music
